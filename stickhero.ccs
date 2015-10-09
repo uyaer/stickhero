@@ -1,0 +1,31 @@
+<Solution>
+  <PropertyGroup Name="stickhero" Version="2.3.2.3" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="common">
+          <Image Name="infobtn.png" />
+          <Image Name="music_on.png" />
+          <Image Name="music_off.png" />
+          <Image Name="btnplay.png" />
+          <Image Name="title.png" />
+          <Image Name="floor.png" />
+          <Image Name="rope.png" />
+          <Image Name="slight.png" />
+        </Folder>
+        <Folder Name="jpg">
+          <Image Name="bg.png" />
+          <Image Name="biglight.png" />
+        </Folder>
+        <PlistInfo Name="common.csi" Type="Plist" />
+        <Project Name="Index.csd" Type="Scene" />
+        <Folder Name="effects">
+          <PlistParticleFile Name="snow.plist" />
+        </Folder>
+        <Folder Name="fonts">
+          <Fnt Name="common_en.fnt" />
+        </Folder>
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

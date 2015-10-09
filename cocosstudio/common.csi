@@ -1,0 +1,16 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Type="Plist" Name="common" ID="f69ab111-436e-4c6d-a98d-ca5ef3c7bec6" Version="2.3.2.3" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="True" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="common/infobtn.png" />
+      <FilePathData Path="common/music_on.png" />
+      <FilePathData Path="common/music_off.png" />
+      <FilePathData Path="common/btnplay.png" />
+      <FilePathData Path="common/title.png" />
+      <FilePathData Path="common/floor.png" />
+      <FilePathData Path="common/rope.png" />
+      <FilePathData Path="common/slight.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="1024" />
+  </Content>
+</PlistInfoProjectFile>
