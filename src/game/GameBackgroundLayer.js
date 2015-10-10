@@ -23,6 +23,8 @@ var GameBackgroundLayer = cc.Scene.extend({
         this.addChild(this.mainNode);
         doLayout(this.mainNode);
 
+        addButtonsTouchEffect(["musicBtn", "infoBtn"], this.mainNode);
+
         this.musicBtn = seekChildByName(this.mainNode, "musicBtn");
         this.infoBtn = seekChildByName(this.mainNode, "infoBtn");
         this.scoreTF = seekChildByName(this.mainNode, "scoreTF");
@@ -31,6 +33,12 @@ var GameBackgroundLayer = cc.Scene.extend({
         this.musicBtn.addClickEventListener(this.onMusicBtnClick.bind(this));
         this.infoBtn.addClickEventListener(this.onInfoBtnClick.bind(this));
         this.musicShow();
+    },
+
+    onEnter: function () {
+        this._super();
+
+        AudioManager.instance.playBgSound();
     },
 
     /**
@@ -52,9 +60,9 @@ var GameBackgroundLayer = cc.Scene.extend({
 
     musicShow: function () {
         var uri = "common/music_on.png";
-        if(!AudioManager.instance.getIsAudio()){
+        if (!AudioManager.instance.getIsAudio()) {
             uri = "common/music_off.png";
         }
-        this.musicBtn.loadTextures(uri,uri,uri,ccui.Widget.PLIST_TEXTURE);
+        this.musicBtn.loadTextures(uri, uri, uri, ccui.Widget.PLIST_TEXTURE);
     }
 });

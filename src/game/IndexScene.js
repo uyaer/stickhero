@@ -36,6 +36,8 @@ var IndexScene = cc.Scene.extend({
         this.addChild(this.mainNode);
         doLayout(this.mainNode);
 
+        addButtonsTouchEffect(["playBtn", "musicBtn", "infoBtn"], this.mainNode);
+
         this.playBtn = seekChildByName(this.mainNode, "playBtn");
         this.musicBtn = seekChildByName(this.mainNode, "musicBtn");
         this.infoBtn = seekChildByName(this.mainNode, "infoBtn");
@@ -50,12 +52,12 @@ var IndexScene = cc.Scene.extend({
         this.infoBtn.addClickEventListener(this.onInfoBtnClick.bind(this));
         this.musicShow();
 
-        //music
-        //AudioManager.instance.playBgSound();
     },
 
     onEnter: function () {
         this._super();
+
+        AudioManager.instance.playBgSound();
 
         this.scheduleUpdate();
 

@@ -279,6 +279,7 @@ function addButtonTouchEffect(btn) {
     btn.addTouchEventListener(function (target, type) {
         if (type == ccui.Widget.TOUCH_BEGAN) {
             target.scale = 0.9;
+            AudioManager.instance.playEffect(res.audio_button);
         } else if (type == ccui.Widget.TOUCH_ENDED || type == ccui.Widget.TOUCH_CANCELED) {
             target.scale = 1;
         }
@@ -293,9 +294,8 @@ function addButtonsTouchEffect(names, root) {
     for (var i = 0; i < names.length; i++) {
         var btn = ccui.helper.seekWidgetByName(root, names[i]);
         if (btn) {
-            //addButtonTouchEffect(btn);
-            //btn.pressedActionEnabled = true;
-            //btn._titleRenderer._setFontWeight("bolder")
+            addButtonTouchEffect(btn);
+            btn.pressedActionEnabled = false;
         }
     }
 }

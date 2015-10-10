@@ -19,6 +19,8 @@ var Player = cc.Sprite.extend({
         this.stopAllActions();
 
         this.runAction(cc.animate(cc.animationCache.getAnimation("run")));
+
+        AudioManager.instance.playEffect(res.audio_run);
     },
     /**
      * ·ÅÏÂ¹÷×Ó

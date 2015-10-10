@@ -9,6 +9,12 @@ var res = {
     scene_game:"res/GameBgLayer.json",
     layer_over:"res/GameOverLayer.json",
 
+    audio_bgsound:"res/audio/bgsound.ogg",
+    audio_button:"res/audio/button.ogg",
+    audio_down:"res/audio/down.ogg",
+    audio_gameover:"res/audio/gameover.ogg",
+    audio_ok:"res/audio/ok.ogg",
+    audio_run:"res/audio/run.ogg",
 
 
     logo: "res/logo/logo.png",

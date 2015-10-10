@@ -203,6 +203,7 @@ var GameScene = cc.Scene.extend({
      * 木棍倒下
      */
     ropeDown: function () {
+        AudioManager.instance.playEffect(res.audio_down);
         this.player.playDown();
         this.rope.runAction(cc.sequence(
             cc.rotateBy(0.2, 90),
@@ -259,6 +260,8 @@ var GameScene = cc.Scene.extend({
      */
     playerDownEndAndGameOver: function () {
         GameManager.instance.state = GameState.OVER;
+
+        AudioManager.instance.playEffect(res.audio_gameover);
 
         this.addChild(new GameOverLayer(), 100);
 
