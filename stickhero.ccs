@@ -24,7 +24,10 @@
         </Folder>
         <Folder Name="fonts">
           <Fnt Name="common_en.fnt" />
+          <Fnt Name="scorefont.fnt" />
         </Folder>
+        <Project Name="GameBgLayer.csd" Type="Scene" />
+        <Project Name="GameOverLayer.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

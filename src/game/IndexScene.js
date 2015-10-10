@@ -41,7 +41,14 @@ var IndexScene = cc.Scene.extend({
         this.infoBtn = seekChildByName(this.mainNode, "infoBtn");
         this.hiscoreTF = seekChildByName(this.mainNode, "hiscoreTF");
 
+        this.hiscoreTF.string = "HI-SCORE:" + GameManager.instance.maxScore;
         this.playBtnOriginalPosY = this.playBtn.y;
+
+        //event
+        this.playBtn.addClickEventListener(this.onPlayBtnClick.bind(this));
+        this.musicBtn.addClickEventListener(this.onMusicBtnClick.bind(this));
+        this.infoBtn.addClickEventListener(this.onInfoBtnClick.bind(this));
+        this.musicShow();
 
         //music
         //AudioManager.instance.playBgSound();
@@ -76,7 +83,29 @@ var IndexScene = cc.Scene.extend({
     update: function (dt) {
         this.playBtnAnimRadius += 0.05;
 
-        this.playBtn.y = int(this.playBtnOriginalPosY + 30 * Math.sin(this.playBtnAnimRadius))+0.5;
+        this.playBtn.y = int(this.playBtnOriginalPosY + 30 * Math.sin(this.playBtnAnimRadius)) + 0.5;
+    },
+
+    onPlayBtnClick: function () {
+        sm.runScene(GameScene, hex2Color(0x2f79aa));
+    },
+
+    onMusicBtnClick: function () {
+        AudioManager.instance.setIsAudio(!AudioManager.instance.getIsAudio());
+
+        this.musicShow();
+    },
+
+    onInfoBtnClick: function () {
+        App.goHome();
+    },
+
+    musicShow: function () {
+        var uri = "common/music_on.png";
+        if (!AudioManager.instance.getIsAudio()) {
+            uri = "common/music_off.png";
+        }
+        this.musicBtn.loadTextures(uri, uri, uri, ccui.Widget.PLIST_TEXTURE);
     }
 });
 

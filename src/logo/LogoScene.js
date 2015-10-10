@@ -100,11 +100,7 @@ var LogoScene = cc.Scene.extend({
         if (!cc.rectContainsPoint(rect, pos)) {
             this.showClickAnim(pos);
         } else {
-            if (cc.sys.isNative) {
-                //TODO show my home url
-            } else {
-                window.open("http://www.uyaer.com");
-            }
+            App.goHome();
         }
     },
 

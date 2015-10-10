@@ -6,6 +6,8 @@ var res = {
     player_run:"res/player/player_run.png",
 
     scene_index:"res/Index.json",
+    scene_game:"res/GameBgLayer.json",
+    layer_over:"res/GameOverLayer.json",
 
 
 

@@ -5,7 +5,7 @@
     "showFPS" : false,
     "frameRate" : 60,
     "id" : "gameCanvas",
-    "renderMode" : 1,
+    "renderMode" : 0,
     "engineDir":"frameworks/cocos2d-html5",
 
     "modules" : ["cocos2d", "cocostudio"],
@@ -30,12 +30,14 @@
         "src/i18n/Lang.js",
 
         "src/game/ui/PopUpManager.js",
+        "src/game/ui/GameOverLayer.js",
 
         "src/game/game/Floor.js",
         "src/game/game/Rope.js",
         "src/game/game/Player.js",
 
         "src/game/IndexScene.js",
+        "src/game/GameBackgroundLayer.js",
         "src/game/GameScene.js"
 
 

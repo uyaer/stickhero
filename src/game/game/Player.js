@@ -12,11 +12,21 @@ var Player = cc.Sprite.extend({
 
         this.runAction(cc.animate(cc.animationCache.getAnimation("idle")));
     },
-
+    /**
+     * 奔跑动画
+     */
     playRun: function () {
         this.stopAllActions();
 
         this.runAction(cc.animate(cc.animationCache.getAnimation("run")));
+    },
+    /**
+     * 放下棍子
+     */
+    playDown: function () {
+        this.stopAllActions();
+
+        this.runAction(cc.animate(cc.animationCache.getAnimation("down")));
     }
 })
 

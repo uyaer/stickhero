@@ -17,6 +17,10 @@ var Const = {
      * 地面移动时间
      */
     FLOOR_MOVE_TIME:0.35,
+    /**
+     * 玩家移动速度
+     */
+    PLAYER_MOVE_SPEED:600,
 
     /**
      * 验证码

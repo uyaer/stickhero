@@ -1,0 +1,163 @@
+{
+  "ID": "8e351088-69a8-4fc3-afb9-cde846eb3f45",
+  "Version": "2.3.2.3",
+  "Name": "GameOverLayer",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 21,
+        "Children": [
+          {
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 22,
+            "ActionTag": 959625068,
+            "Size": {
+              "X": 720.0,
+              "Y": 1280.0
+            },
+            "Name": "mask",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "LabelText": "GAME OVER",
+            "LabelBMFontFile_CNB": {
+              "Type": "Normal",
+              "Path": "fonts/common_en.fnt",
+              "Plist": ""
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 359.9984,
+              "Y": 875.2281
+            },
+            "Scale": {
+              "ScaleX": 1.2403,
+              "ScaleY": 1.7595
+            },
+            "CColor": {
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.6838
+            },
+            "PreSize": {
+              "X": 0.2528,
+              "Y": 0.05
+            },
+            "LeftMargin": 182.9984,
+            "RightMargin": 183.0016,
+            "TopMargin": 372.7719,
+            "BottomMargin": 843.2281,
+            "Tag": 23,
+            "ActionTag": -1426782069,
+            "Size": {
+              "X": 354.0,
+              "Y": 64.0
+            },
+            "Name": "BitmapFontLabel_1",
+            "ctype": "TextBMFontObjectData"
+          },
+          {
+            "LabelText": "TOUCH START",
+            "LabelBMFontFile_CNB": {
+              "Type": "Normal",
+              "Path": "fonts/common_en.fnt",
+              "Plist": ""
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 360.0,
+              "Y": 525.9921
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.4109
+            },
+            "PreSize": {
+              "X": 0.2528,
+              "Y": 0.05
+            },
+            "LeftMargin": 149.5,
+            "RightMargin": 149.5,
+            "TopMargin": 722.0079,
+            "BottomMargin": 493.9921,
+            "Tag": 24,
+            "ActionTag": 1699843036,
+            "Size": {
+              "X": 421.0,
+              "Y": 64.0
+            },
+            "Name": "BitmapFontLabel_1_0",
+            "ctype": "TextBMFontObjectData"
+          }
+        ],
+        "Size": {
+          "X": 720.0,
+          "Y": 1280.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "fonts/common_en.fnt",
+        "fonts/common_en.png"
+      ],
+      "ctype": "GameProjectData"
+    }
+  },
+  "Type": "Layer"
+}

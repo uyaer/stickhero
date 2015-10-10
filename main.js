@@ -124,8 +124,7 @@ cc.game.onStart = function () {
 
         cc.spriteFrameCache.addSpriteFrames(res.common_plist, res.common_png);
 
-        //sm.runScene(IndexScene, hex2Color(0x2f79aa));
-        sm.runScene(GameScene);
+        sm.runScene(IndexScene, hex2Color(0x2f79aa));
     }
 };
 cc.game.run();

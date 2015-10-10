@@ -43,7 +43,6 @@ GameManager.instance = {
             str = JSON.stringify(data);
             var vertify2 = md5(str, Const.VERTIFY_KEY);
             if (vertify1 == vertify2) {
-                this.score = data["score"] || 0;
                 this.maxScore = data["maxScore"] || 0;
             } else {
                 this.useInitFullData();
@@ -75,7 +74,6 @@ GameManager.instance = {
     _saveDataDelay: function () {
         this._saveCfgDelayCount = 0;
         var data = {
-            "score": this.score,
             "maxScore": this.maxScore
         };
         var dataStr = JSON.stringify(data);
@@ -91,7 +89,6 @@ GameManager.instance = {
      * 默认值
      */
     useInitFullData: function () {
-        this.score = 0;
         this.maxScore = 0;
     }
 
