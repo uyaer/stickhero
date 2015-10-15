@@ -28,22 +28,30 @@ package org.cocos2dx.javascript;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
+import org.cocos2dx.lib.Cocos2dxJavascriptJavaBridge;
+
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.WindowManager;
+
+import com.uyaer.stickhero.R;
 
 
 // The name of .so is specified in AndroidMenifest.xml. NativityActivity will load it automatically for you.
 // You can use "System.loadLibrary()" to load other .so files.
 
 public class AppActivity extends Cocos2dxActivity{
-
+	private static AppActivity app = null;
     static String hostIPAdress = "0.0.0.0";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         
         if(nativeIsLandScape()) {
@@ -55,6 +63,8 @@ public class AppActivity extends Cocos2dxActivity{
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         }
         hostIPAdress = getHostIpAddress();
+        
+        app = this;
     }
     
     @Override
@@ -80,4 +90,82 @@ public class AppActivity extends Cocos2dxActivity{
     private static native boolean nativeIsLandScape();
     private static native boolean nativeIsDebug();
     
+    /**
+	 * 提示关闭界面
+	 */
+	public static void confirmClose() {
+		// 这里一定要使用runOnUiThread
+		app.runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				AlertDialog.Builder builder = new AlertDialog.Builder(app);
+				builder.setMessage(app.getString(R.string.exit_tip));
+				builder.setTitle(app.getString(R.string.alert));
+				builder.setPositiveButton(app.getString(R.string.ok),
+						new OnClickListener() {
+							@Override
+							public void onClick(DialogInterface arg0, int arg1) {
+								// 一定要在GL线程中执行
+								app.runOnGLThread(new Runnable() {
+									@Override
+									public void run() {
+										Cocos2dxJavascriptJavaBridge
+												.evalString("App.closeApp()");
+									}
+								});
+							}
+						});
+				builder.setNegativeButton(app.getString(R.string.cancel),
+						new OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog,
+									int which) {
+								dialog.dismiss();
+							}
+						});
+				builder.create().show();
+			}
+		});
+	}
+
+	/**
+	 * 进入分享
+	 */
+	public static void showShare(final String url) {
+		// 这里一定要使用runOnUiThread
+		app.runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				Uri uri = Uri.parse(url);
+				Intent it = new Intent(Intent.ACTION_VIEW, uri);
+				app.startActivity(it);
+			}
+		});
+	}
+
+	/**
+	 * 获取游戏包名称
+	 */
+	public static String getPackageURI() {
+		return app.getPackageName();
+	}
+
+	/**
+	 * 显示广告
+	 */
+	public static void showCpAd() {
+		// 这里一定要使用runOnUiThread
+//		app.runOnUiThread(new Runnable() {
+//			@Override
+//			public void run() {
+//				Gkl pm = Gkl.getInstance(app.getApplicationContext(), ADID);
+//				pm.c();
+//				pm.show(app.getApplicationContext());
+//				pm.load();
+//			}
+//		});
+	}
+    
 }
+
+

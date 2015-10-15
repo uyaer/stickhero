@@ -83,9 +83,9 @@ cc.game.onStart = function () {
     }
 
     function gameStart() {
-        //if (!App.checkAppVertify()) {
-        //    return;
-        //}
+        if (!App.checkAppVertify()) {
+            return;
+        }
 
         //GameManager.instance.init();
         //Lang.init();

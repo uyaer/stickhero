@@ -39,8 +39,8 @@ App.showShare = function () {
 
     var url = "http://uyaer.qiniudn.com/share.html?lang=" + lang +
         "&icon=_games/ten2more/icon512.png" +
-        "&name=" + (lang == "zh" ? "十分完美" : "ten%20dots") +
-        "&pic=http://uyaer.qiniudn.com/images/7.png" +
+        "&name=" + (lang == "zh" ? "棍子英雄" : "stick hero") +
+        "&pic=http://uyaer.qiniudn.com/images/9.png" +
         "&title=" + (lang == "zh" ? "很好玩的游戏" : "A fun game with you!") +
         "&desc=" + (lang == "zh" ? "喜欢2048吗？玩过两点一线吗？那一定要来试一试这款游戏，非常好玩哦！" : "2048 like it? and two dots? It must be to try this game, very fun oh!") +
         "&r=" + Date.now() +
@@ -51,7 +51,7 @@ App.showShare = function () {
 
 App.openURL = function (url) {
     if (cc.sys.isNative) {
-        jsb.reflection.callStaticMethod(App.__android_class, "showShare", "(Ljava/lang/String;)V", url);
+        jsb.reflection.callStaticMethod(App.__android_class, "openURL", "(Ljava/lang/String;)V", url);
     } else {
         window.open(url);
     }
