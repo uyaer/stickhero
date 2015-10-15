@@ -10,9 +10,9 @@ App.__android_class = "org/cocos2dx/javascript/AppActivity";
  * @returns {boolean}
  */
 App.checkAppVertify = function () {
-    if (cc.sys.isNative) {
+    if (cc.sys.isNative && cc.sys.isMobile) {
         var uri = jsb.reflection.callStaticMethod(App.__android_class, "getPackageURI", "()Ljava/lang/String;");
-        if (uri == "com.uyaer.ten2more") {
+        if (uri == "com.uyaer.stickhero") {
             return true;
         }
         return false;

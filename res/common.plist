@@ -7,7 +7,7 @@
 			<key>common/infobtn.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{812,400},{110,110}}</string>
+				<string>{{817,405},{110,110}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -18,7 +18,7 @@
 			<key>common/music_on.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,332},{110,110}}</string>
+				<string>{{1,335},{110,110}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -29,7 +29,7 @@
 			<key>common/music_off.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{110,332},{110,110}}</string>
+				<string>{{113,335},{110,110}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -40,7 +40,7 @@
 			<key>common/btnplay.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{512,200},{300,300}}</string>
+				<string>{{515,203},{300,300}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -51,7 +51,7 @@
 			<key>common/title.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,0},{512,332}}</string>
+				<string>{{1,1},{512,332}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -62,7 +62,7 @@
 			<key>common/floor.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{512,0},{200,500}}</string>
+				<string>{{515,1},{200,500}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -73,7 +73,7 @@
 			<key>common/rope.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{0,500},{20,800}}</string>
+				<string>{{1,505},{20,800}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -84,7 +84,7 @@
 			<key>common/slight.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{812,200},{200,200}}</string>
+				<string>{{817,203},{200,200}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -102,14 +102,14 @@
 			<key>realTextureFileName</key>
 			<string>common.png</string>
 			<key>size</key>
-			<string>{1012,520}</string>
+			<string>{1018,526}</string>
 		</dict>
 		<key>texture</key>
 		<dict>
 			<key>width</key>
-			<integer>1012</integer>
+			<integer>1018</integer>
 			<key>height</key>
-			<integer>520</integer>
+			<integer>526</integer>
 		</dict>
 	</dict>
 </plist>

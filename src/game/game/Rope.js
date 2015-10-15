@@ -1,6 +1,6 @@
 var Rope = cc.Node.extend({
     /**
-     * …˛◊”øÌ∂»
+     * Áª≥Â≠êÂÆΩÂ∫¶
      */
     ropeLength: 0,
     /**
@@ -14,6 +14,8 @@ var Rope = cc.Node.extend({
         sp.anchorY = 0;
         this.addChild(sp);
         this.sp = sp;
+
+        this.updateRopLength(0);
     },
 
     updateRopLength: function (len) {

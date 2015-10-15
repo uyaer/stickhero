@@ -1,6 +1,6 @@
 var Floor = cc.Node.extend({
     /**
-     * µØÃæ¿í¶È
+     * åœ°é¢å®½åº¦
      */
     floorWidth: 0,
     ctor: function (w) {

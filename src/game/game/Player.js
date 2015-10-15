@@ -13,7 +13,7 @@ var Player = cc.Sprite.extend({
         this.runAction(cc.animate(cc.animationCache.getAnimation("idle")));
     },
     /**
-     * 奔跑动画
+     * 濂旇窇鍔ㄧ敾
      */
     playRun: function () {
         this.stopAllActions();
@@ -23,7 +23,7 @@ var Player = cc.Sprite.extend({
         AudioManager.instance.playEffect(res.audio_run);
     },
     /**
-     * 放下棍子
+     * 鏀句笅妫嶅瓙
      */
     playDown: function () {
         this.stopAllActions();

@@ -1,3 +1,16 @@
 .idea/
 
 .settings/
+
+frameworks/runtime-src/proj.android/assets
+
+frameworks/runtime-src/proj.android/bin
+
+
+simulator/
+
+frameworks/runtime-src/proj.ios_mac/stickhero-mobile/*
+
+frameworks/runtime-src/proj.android/obj/local/*
+
+frameworks/runtime-src/proj.ios_mac/build/*
