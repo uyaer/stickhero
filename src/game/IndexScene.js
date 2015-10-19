@@ -4,6 +4,10 @@ var IndexScene = cc.Scene.extend({
      */
     mainNode: null,
     /**
+     * @type cc.Sprite
+     */
+    light: null,
+    /**
      * @type ccui.Button
      */
     playBtn: null,
@@ -38,6 +42,7 @@ var IndexScene = cc.Scene.extend({
 
         addButtonsTouchEffect(["playBtn", "musicBtn", "infoBtn"], this.mainNode);
 
+        this.light = seekChildByName(this.mainNode, "light");
         this.playBtn = seekChildByName(this.mainNode, "playBtn");
         this.musicBtn = seekChildByName(this.mainNode, "musicBtn");
         this.infoBtn = seekChildByName(this.mainNode, "infoBtn");
@@ -52,6 +57,10 @@ var IndexScene = cc.Scene.extend({
         this.infoBtn.addClickEventListener(this.onInfoBtnClick.bind(this));
         this.musicShow();
 
+        this.light.runAction(cc.sequence(
+            cc.scaleTo(1, 0.75),
+            cc.scaleTo(1, 1)
+        ).repeatForever());
     },
 
     onEnter: function () {

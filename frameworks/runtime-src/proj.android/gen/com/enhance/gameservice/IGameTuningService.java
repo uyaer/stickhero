@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/hc/Documents/CocosProjects/stickhero/frameworks/runtime-src/proj.android/src/com/enhance/gameservice/IGameTuningService.aidl
+ * Original file: D:\\Documents\\GitHub\\stickhero\\frameworks\\runtime-src\\proj.android\\src\\com\\enhance\\gameservice\\IGameTuningService.aidl
  */
 package com.enhance.gameservice;
 public interface IGameTuningService extends android.os.IInterface

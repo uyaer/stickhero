@@ -38,13 +38,13 @@ App.showShare = function () {
     var lang = Const.LANG;
 
     var url = "http://uyaer.qiniudn.com/share.html?lang=" + lang +
-        "&icon=_games/ten2more/icon512.png" +
+        "&icon=_games/stickhero/icon512.png" +
         "&name=" + (lang == "zh" ? "棍子英雄" : "stick hero") +
         "&pic=http://uyaer.qiniudn.com/images/9.png" +
         "&title=" + (lang == "zh" ? "很好玩的游戏" : "A fun game with you!") +
-        "&desc=" + (lang == "zh" ? "喜欢2048吗？玩过两点一线吗？那一定要来试一试这款游戏，非常好玩哦！" : "2048 like it? and two dots? It must be to try this game, very fun oh!") +
+        "&desc=" + (lang == "zh" ? "棍子英雄，测试你的掌控力和节奏感" : "Stick hero! very fun oh!") +
         "&r=" + Date.now() +
-        "&url=http://uyaer.qiniudn.com/?v" + Date.now() + (lang == "zh" ? "#game-7" : "#game-8");
+        "&url=http://uyaer.qiniudn.com/?v" + Date.now() + (lang == "zh" ? "#game-9" : "#game-10");
 
     App.openURL(url);
 }

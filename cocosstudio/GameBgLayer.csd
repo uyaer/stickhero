@@ -52,26 +52,26 @@
             <FileData Type="Normal" Path="jpg/biglight.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="infoBtn" ActionTag="-1424906111" Tag="9" IconVisible="False" LeftMargin="585.9275" RightMargin="24.0725" TopMargin="19.5942" BottomMargin="1150.4058" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="80" Scale9Height="88" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="110.0000" Y="110.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="640.9275" Y="1205.4058" />
+          <AbstractNodeData Name="backBtn" ActionTag="-1424906111" Tag="9" IconVisible="False" LeftMargin="585.9275" RightMargin="24.0725" TopMargin="18.1240" BottomMargin="1148.8760" TouchEnable="True" FontSize="14" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="80" Scale9Height="91" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="110.0000" Y="113.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
+            <Position X="640.9275" Y="1261.8760" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.8902" Y="0.9417" />
-            <PreSize X="0.1528" Y="0.0859" />
+            <PrePosition X="0.8902" Y="0.9858" />
+            <PreSize X="0.1528" Y="0.0883" />
             <TextColor A="255" R="65" G="65" B="70" />
-            <NormalFileData Type="MarkedSubImage" Path="common/infobtn.png" Plist="common.plist" />
+            <NormalFileData Type="MarkedSubImage" Path="common/back.png" Plist="common.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="musicBtn" ActionTag="-851766302" Tag="10" IconVisible="False" LeftMargin="34.7761" RightMargin="575.2239" TopMargin="19.5942" BottomMargin="1150.4058" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="80" Scale9Height="88" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="musicBtn" ActionTag="-851766302" Tag="10" IconVisible="False" LeftMargin="34.7761" RightMargin="575.2239" TopMargin="19.5942" BottomMargin="1150.4058" TouchEnable="True" FontSize="14" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="80" Scale9Height="88" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="110.0000" Y="110.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="89.7761" Y="1205.4058" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
+            <Position X="89.7761" Y="1260.4058" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1247" Y="0.9417" />
+            <PrePosition X="0.1247" Y="0.9847" />
             <PreSize X="0.1528" Y="0.0859" />
             <TextColor A="255" R="65" G="65" B="70" />
             <NormalFileData Type="MarkedSubImage" Path="common/music_on.png" Plist="common.plist" />

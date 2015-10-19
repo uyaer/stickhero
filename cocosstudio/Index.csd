@@ -41,7 +41,7 @@
             <FileData Type="Normal" Path="effects/snow.plist" Plist="" />
             <BlendFunc Src="1" Dst="772" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ligth" ActionTag="1412377149" Tag="6" IconVisible="False" LeftMargin="32.9759" RightMargin="25.0242" TopMargin="73.9663" BottomMargin="544.0338" ctype="SpriteObjectData">
+          <AbstractNodeData Name="light" ActionTag="1412377149" Tag="6" IconVisible="False" LeftMargin="32.9759" RightMargin="25.0242" TopMargin="73.9663" BottomMargin="544.0338" ctype="SpriteObjectData">
             <Size X="662.0000" Y="662.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="363.9759" Y="875.0338" />

@@ -73,13 +73,6 @@ var GameScene = cc.Scene.extend({
             onTouchBegan: this.onTouchBeganHandler.bind(this),
             onTouchEnded: this.onTouchEndedHandler.bind(this)
         }, this);
-        //event
-        if (cc.sys.isNative) {
-            cc.eventManager.addListener({
-                event: cc.EventListener.KEYBOARD,
-                onKeyReleased: this.onKeyClicked.bind(this)
-            }, this);
-        }
     },
 
     onExit: function () {

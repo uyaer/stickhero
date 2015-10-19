@@ -1,7 +1,7 @@
 var AudioManager = {};
 AudioManager.instance = {
     selectEffectIndex: 0,
-    _isAudio: true,
+    _isAudio: false,
     _bgsoundName: "res/audio/bgsound.ogg",
     getIsAudio: function () {
         return this._isAudio;

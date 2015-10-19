@@ -131,7 +131,7 @@ public class AppActivity extends Cocos2dxActivity{
 	/**
 	 * 进入分享
 	 */
-	public static void showShare(final String url) {
+	public static void openURL(final String url) {
 		// 这里一定要使用runOnUiThread
 		app.runOnUiThread(new Runnable() {
 			@Override

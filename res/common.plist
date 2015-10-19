@@ -7,7 +7,7 @@
 			<key>common/infobtn.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{817,405},{110,110}}</string>
+				<string>{{1,335},{110,110}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -18,7 +18,7 @@
 			<key>common/music_on.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{1,335},{110,110}}</string>
+				<string>{{113,335},{110,110}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -29,7 +29,7 @@
 			<key>common/music_off.png</key>
 			<dict>
 				<key>frame</key>
-				<string>{{113,335},{110,110}}</string>
+				<string>{{225,335},{110,110}}</string>
 				<key>offset</key>
 				<string>{0,0}</string>
 				<key>rotated</key>
@@ -91,6 +91,17 @@
 				<false />
 				<key>sourceSize</key>
 				<string>{200,200}</string>
+			</dict>
+			<key>common/back.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{817,405},{110,113}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<true />
+				<key>sourceSize</key>
+				<string>{110,113}</string>
 			</dict>
 		</dict>
 		<key>metadata</key>

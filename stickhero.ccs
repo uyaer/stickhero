@@ -12,6 +12,7 @@
           <Image Name="floor.png" />
           <Image Name="rope.png" />
           <Image Name="slight.png" />
+          <Image Name="back.png" />
         </Folder>
         <Folder Name="jpg">
           <Image Name="bg.png" />

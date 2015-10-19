@@ -49,13 +49,13 @@
 cc.game.onStart = function () {
     cc.view.adjustViewPort(true);
     cc.view.enableRetina(true);
-    if (cc.sys.isMobile) {
+    //if (cc.sys.isMobile) {
         cc.view.setDesignResolutionSize(720, 1280, cc.ResolutionPolicy.FIXED_WIDTH);
         cc.view.resizeWithBrowserSize(true);
-    } else {
-        cc.view.setDesignResolutionSize(720, 1280, cc.ResolutionPolicy.SHOW_ALL);
-        cc.view.resizeWithBrowserSize(false);
-    }
+    //} else {
+    //    cc.view.setDesignResolutionSize(720, 1280, cc.ResolutionPolicy.SHOW_ALL);
+    //    cc.view.resizeWithBrowserSize(false);
+    //}
 
 
     Const.WIN_W = cc.winSize.width;
@@ -87,7 +87,7 @@ cc.game.onStart = function () {
             return;
         }
 
-        //GameManager.instance.init();
+        GameManager.instance.init();
         //Lang.init();
         Player.initSpriteFrame();
 

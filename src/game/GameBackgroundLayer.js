@@ -10,7 +10,7 @@ var GameBackgroundLayer = cc.Scene.extend({
     /**
      * @type ccui.Button
      */
-    infoBtn: null,
+    backBtn: null,
     /**
      * @type ccui.TextBMFont
      */
@@ -23,22 +23,28 @@ var GameBackgroundLayer = cc.Scene.extend({
         this.addChild(this.mainNode);
         doLayout(this.mainNode);
 
-        addButtonsTouchEffect(["musicBtn", "infoBtn"], this.mainNode);
+        addButtonsTouchEffect(["musicBtn", "backBtn"], this.mainNode);
 
         this.musicBtn = seekChildByName(this.mainNode, "musicBtn");
-        this.infoBtn = seekChildByName(this.mainNode, "infoBtn");
+        this.backBtn = seekChildByName(this.mainNode, "backBtn");
         this.scoreTF = seekChildByName(this.mainNode, "scoreTF");
 
         //event
         this.musicBtn.addClickEventListener(this.onMusicBtnClick.bind(this));
-        this.infoBtn.addClickEventListener(this.onInfoBtnClick.bind(this));
+        this.backBtn.addClickEventListener(this.onBackBtnClick.bind(this));
         this.musicShow();
     },
 
     onEnter: function () {
         this._super();
 
-        AudioManager.instance.playBgSound();
+        //event
+        if (cc.sys.isNative) {
+            cc.eventManager.addListener({
+                event: cc.EventListener.KEYBOARD,
+                onKeyReleased: this.onBackBtnClick.bind(this)
+            }, this);
+        }
     },
 
     /**
@@ -54,8 +60,8 @@ var GameBackgroundLayer = cc.Scene.extend({
         this.musicShow();
     },
 
-    onInfoBtnClick: function () {
-        App.goHome();
+    onBackBtnClick: function () {
+        sm.runScene(IndexScene, hex2Color(0x2f79aa));
     },
 
     musicShow: function () {

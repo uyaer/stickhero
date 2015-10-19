@@ -10,6 +10,7 @@
       <FilePathData Path="common/floor.png" />
       <FilePathData Path="common/rope.png" />
       <FilePathData Path="common/slight.png" />
+      <FilePathData Path="common/back.png" />
     </ImageFiles>
     <MaxSize Width="1024" Height="1024" />
   </Content>
