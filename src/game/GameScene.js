@@ -259,7 +259,9 @@ var GameScene = cc.Scene.extend({
         this.addChild(new GameOverLayer(), 100);
 
         if (GameManager.instance.score > 10) {
-            App.showCpAd();
+            if (Math.random() < 0.35) {
+                App.showCpAd();
+            }
         }
     },
 
