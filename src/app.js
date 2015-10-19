@@ -62,5 +62,7 @@ App.goHome = function () {
 }
 
 App.showCpAd = function () {
-
+    if (cc.sys.isNative) {
+        jsb.reflection.callStaticMethod(App.__android_class, "showCpAd", "()V");
+    }
 }

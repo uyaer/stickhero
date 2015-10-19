@@ -76,39 +76,39 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="infoBtn" ActionTag="-1424906111" Tag="9" IconVisible="False" LeftMargin="579.8555" RightMargin="30.1445" TopMargin="1152.7469" BottomMargin="17.2531" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="80" Scale9Height="88" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="infoBtn" ActionTag="-1424906111" Tag="9" IconVisible="False" LeftMargin="579.8557" RightMargin="30.1443" TopMargin="1052.7467" BottomMargin="117.2533" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="80" Scale9Height="88" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="110.0000" Y="110.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="634.8555" Y="72.2531" />
+            <Position X="634.8557" Y="172.2533" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.8817" Y="0.0564" />
+            <PrePosition X="0.8817" Y="0.1346" />
             <PreSize X="0.1528" Y="0.0859" />
             <TextColor A="255" R="65" G="65" B="70" />
             <NormalFileData Type="MarkedSubImage" Path="common/infobtn.png" Plist="common.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="musicBtn" ActionTag="-851766302" Tag="10" IconVisible="False" LeftMargin="28.7043" RightMargin="581.2957" TopMargin="1152.7468" BottomMargin="17.2531" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="80" Scale9Height="88" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="musicBtn" ActionTag="-851766302" Tag="10" IconVisible="False" LeftMargin="28.7045" RightMargin="581.2955" TopMargin="1052.7467" BottomMargin="117.2533" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="80" Scale9Height="88" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="110.0000" Y="110.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="83.7043" Y="72.2531" />
+            <Position X="83.7045" Y="172.2533" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1163" Y="0.0564" />
+            <PrePosition X="0.1163" Y="0.1346" />
             <PreSize X="0.1528" Y="0.0859" />
             <TextColor A="255" R="65" G="65" B="70" />
             <NormalFileData Type="MarkedSubImage" Path="common/music_on.png" Plist="common.plist" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="hiscoreTF" ActionTag="-44842037" Tag="12" IconVisible="False" LeftMargin="182.0002" RightMargin="181.9998" TopMargin="1044.7710" BottomMargin="171.2289" LabelText="HI-SCORE:0" ctype="TextBMFontObjectData">
+          <AbstractNodeData Name="hiscoreTF" ActionTag="-44842037" Tag="12" IconVisible="False" LeftMargin="182.0004" RightMargin="181.9996" TopMargin="1034.7711" BottomMargin="181.2289" LabelText="HI-SCORE:0" ctype="TextBMFontObjectData">
             <Size X="356.0000" Y="64.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="360.0002" Y="203.2289" />
+            <Position X="360.0004" Y="213.2289" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5000" Y="0.1588" />
+            <PrePosition X="0.5000" Y="0.1666" />
             <PreSize X="0.2528" Y="0.0500" />
             <LabelBMFontFile_CNB Type="Normal" Path="fonts/common_en.fnt" Plist="" />
           </AbstractNodeData>
