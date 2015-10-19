@@ -16,3 +16,6 @@ frameworks/runtime-src/proj.android/obj/local/*
 frameworks/runtime-src/proj.ios_mac/build/*
 
 frameworks/runtime-src/proj.android/gen/
+
+package/
+package/stickhero-release-signed.apk

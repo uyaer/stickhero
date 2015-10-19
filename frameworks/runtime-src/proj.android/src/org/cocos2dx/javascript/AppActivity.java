@@ -45,11 +45,10 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
+import com.kzpa.pai.Gkl;
 import com.umeng.analytics.MobclickAgent;
 import com.uyaer.stickhero.R;
 
@@ -60,7 +59,7 @@ public class AppActivity extends Cocos2dxActivity {
 	private static AppActivity app = null;
 	static String hostIPAdress = "0.0.0.0";
 	private AdView adView;
-	public InterstitialAd mInterstitialAd;
+	private static String ADID = "e2b61b4043b55b694f25780ded32d7fa";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -86,22 +85,8 @@ public class AppActivity extends Cocos2dxActivity {
 	}
 
 	private void initCpAdSdk() {
-		mInterstitialAd = new InterstitialAd(this);
-		mInterstitialAd.setAdUnitId("ca-app-pub-7430856253637281/8944601052");
-		mInterstitialAd.setAdListener(new AdListener() {
-			@Override
-			public void onAdClosed() {
-				requestNewInterstitial();
-			}
-		});
-
-		requestNewInterstitial();
-	}
-
-	private void requestNewInterstitial() {
-		AdRequest adRequest = new AdRequest.Builder().build();
-
-		mInterstitialAd.loadAd(adRequest);
+		Gkl pm = Gkl.getInstance(getApplicationContext(), ADID);
+		pm.load();// 可预加载提前调用缓存广告至本地
 	}
 
 	private void initAd() {
@@ -242,21 +227,12 @@ public class AppActivity extends Cocos2dxActivity {
 		app.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
-				if (app.mInterstitialAd.isLoaded()) {
-					app.mInterstitialAd.show();
-				}
+				Gkl pm = Gkl.getInstance(app.getApplicationContext(), ADID);
+				pm.c();
+				pm.show(app.getApplicationContext());
+				pm.load();
 			}
 		});
-		// 这里一定要使用runOnUiThread
-		// app.runOnUiThread(new Runnable() {
-		// @Override
-		// public void run() {
-		// Gkl pm = Gkl.getInstance(app.getApplicationContext(), ADID);
-		// pm.c();
-		// pm.show(app.getApplicationContext());
-		// pm.load();
-		// }
-		// });
 	}
 
 }
